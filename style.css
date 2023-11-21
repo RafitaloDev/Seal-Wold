@@ -81,6 +81,7 @@ a {
     font-size: 1.25rem;
     line-height: 1.75;
     margin: 4rem auto;
+    width: 60vmin;
 }
 
 .section__img-inline {
@@ -151,5 +152,28 @@ footer {
     text-align: center;
 }
 
-@media (max-width:582px){}
+@media (max-width:582px){
+    .section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .section__img,
+.section__img-inline {
+    border-radius: .75rem;
+    /* eixo x, eixo y, blur, expansão/recuo, cor */
+    box-shadow: 0 1rem 2rem -0.5rem rgba(20, 116, 180, 0.25);
+    object-fit: cover;
+    object-position: top;
+    position: relative;
+    max-height: 30rem;
+    width: 50vmin
+}
+
+}
     
