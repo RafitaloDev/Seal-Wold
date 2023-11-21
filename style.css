@@ -150,3 +150,6 @@ footer {
     padding: 2rem;
     text-align: center;
 }
+
+@media (max-width:582px){}
+    
